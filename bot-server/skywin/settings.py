@@ -43,6 +43,9 @@ INSTALLED_APPS = (
     # local apps
     'bot',
 
+    # third party apps
+    'rest_framework',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -167,6 +170,17 @@ LOGIN_URL = "/login/"
 PRIVACY_POLICY_URL = ""
 FACEBOOK_APP_ID = "..."
 EMAIL_ADDRESS_FOR_SUPPORT = "support@" + DOMAIN
+
+
+#########################
+# Django REST Framework #
+#########################
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions, or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 
 # Loading test/prod settings based on ENV settings
