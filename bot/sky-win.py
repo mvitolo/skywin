@@ -63,18 +63,17 @@ def set_value(bot, update):
             team = chat_context[1]
             player = chat_context[2]
             print chat_id, chat_id, getId(chat_id, user_id)
-            values[getId(chat_id, user_id) + team] = update.message.from_user.first_name + ": Goal di " + player + " (" + team + ")"
+            values[getId(chat_id, user_id) + team] = team + ": Goal di " + player
             bot.sendMessage(chat_id, text=u"Bene! Hai puntato su %s." % player)
         else:
             bot.sendMessage(chat_id,
-                            text="Hai annullato l'ultima modifica")
+                            text="Hai annullato la giocata.")
             
 def startChooseTeam(bot, update, chat_id, user_id):
     state[getId(chat_id, user_id)] = AWAIT_TEAM  # set the state
     context[getId(chat_id, user_id)] = user_id  # save the user id to context
     bot.sendMessage(chat_id,
-				  text="Bene, scegli la partita su cui vuoi giocare\n"
-				  "/cancel per cancellare",
+				  text="Bene, scegli la partita su cui vuoi giocare\n",
 				  reply_markup=ReplyKeyboardMarkup(
                     [[KeyboardButton(INTER_JUVE), KeyboardButton(NAPOLI_ROMA)]],
                     one_time_keyboard=True))
@@ -84,7 +83,7 @@ def askPlayer(bot, update, chat_id, user_id):
     context[getId(chat_id, user_id)] = (user_id, update.message.text)   # save the user id to context
     bot.sendMessage(chat_id,
 				  text=u"Secondo te chi sarà il prossimo giocatore che segna?\n"
-				  "/cancel per cancellare")
+				  )
     
 def savePlayer(bot, update, chat_id, user_id):
     state[getId(chat_id, user_id)] = AWAIT_CONFIRMATION
@@ -98,6 +97,7 @@ def savePlayer(bot, update, chat_id, user_id):
     
 def showResults(bot, update, chat_id, user_id):
     print values
+    #choosesStr = NAPOLI_ROMA + ": espulsione di Totti\n"
     choosesStr = ""
     
     for k in values.keys():

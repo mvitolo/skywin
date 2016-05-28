@@ -28,3 +28,34 @@ class UserProfile(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.user.username
+
+
+class Team(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __unicode__(self):
+        return u'%s' % self.name
+
+
+class Player(models.Model):
+    first_name = models.CharField(max_length=100)
+    second_name = models.CharField(max_length=100)
+    tally = models.IntegerField(default=0)
+    team = models.ForeignKey(Team, related_name='players')
+
+    def __unicode__(self):
+        return u'%s %s' % (self.first_name, self.second_name)
+
+
+class Match(models.Model):
+    home_team = models.ForeignKey(Team, related_name="home_team")
+    guest_team = models.ForeignKey(Team, related_name="guest_team")
+    home_score = models.IntegerField(default=0)
+    guest_score = models.IntegerField(default=0)
+
+    class Meta:
+        verbose_name = 'Match'
+        verbose_name_plural = 'Matches'
+
+    def __unicode__(self):
+        return u'%s %s - %s %s' % (self.home_team.name, self.home_score, self.guest_score, self.guest_team.name)
