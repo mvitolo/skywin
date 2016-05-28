@@ -1,1 +1,52 @@
- 
+{
+  "matchid": "1",
+  "homeTeam": "Juventus",
+  "guestTeam": "Inter",
+  "homeScore": 1,
+  "guestScore": 0,
+  "players":
+    {
+      "home":
+        [
+          {
+            "playerid": "1",
+            "firstName": "Leonardo",
+            "secondName": "Bonucci",
+            "tally": 60
+          },
+          {
+            "playerid": "2",
+            "firstName": "Alvaro",
+            "secondName": "Morata",
+            "tally": 40
+          },
+          {
+            "playerid": "3",
+            "firstName": "Claudio",
+            "secondName": "Marchisio",
+            "tally": 60
+          }
+        ],
+      "guest":
+        [
+          {
+            "playerid": "4",
+            "firstName": "Mauro",
+            "secondName": "Icardi",
+            "tally": 160
+          },
+          {
+            "playerid": "5",
+            "firstName": "Rodrigo",
+            "secondName": "Palacio",
+            "tally": 20
+          },
+          {
+            "playerid": "6",
+            "firstName": "Ivan",
+            "secondName": "Perisic",
+            "tally": 70
+          }
+        ]
+    }
+}
