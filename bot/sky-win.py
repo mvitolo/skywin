@@ -41,17 +41,18 @@ def set_value(bot, update):
 
     # Since the handler will also be called on messages, we need to check if
     # the message is actually a command
-    if chat_state == MENU and "gioc" in text.lower():
-        startChooseTeam(bot, update, chat_id, user_id)
         
-    elif chat_state == MENU and "mostr" in text.lower():
+    if chat_state == MENU and "mostr" in text.lower():
         showResults(bot, update, chat_id, user_id)
+        
+    elif chat_state == MENU and "gioc" in text.lower():
+        startChooseTeam(bot, update, chat_id, user_id)
 
     # If we are waiting for input and the right user answered
     elif chat_state == AWAIT_TEAM and chat_context == user_id:
         askPlayer(bot, update, chat_id, user_id)
         
-    elif chat_state == AWAIT_INPUT and chat_context == user_id:
+    elif chat_state == AWAIT_INPUT and chat_context[0] == user_id:
         savePlayer(bot, update, chat_id, user_id)
 
     # If we are waiting for confirmation and the right user answered
@@ -59,9 +60,10 @@ def set_value(bot, update):
         del state[getId(chat_id, user_id)]
         del context[getId(chat_id, user_id)]
         if text == YES:
-            player = chat_context[1]
+            team = chat_context[1]
+            player = chat_context[2]
             print chat_id, chat_id, getId(chat_id, user_id)
-            values[getId(chat_id, user_id)] = update.message.from_user.first_name + ": " + chat_context[1]
+            values[getId(chat_id, user_id) + team] = update.message.from_user.first_name + ": Goal di " + player + " (" + team + ")"
             bot.sendMessage(chat_id, text=u"Bene! Hai puntato su %s." % player)
         else:
             bot.sendMessage(chat_id,
@@ -71,7 +73,7 @@ def startChooseTeam(bot, update, chat_id, user_id):
     state[getId(chat_id, user_id)] = AWAIT_TEAM  # set the state
     context[getId(chat_id, user_id)] = user_id  # save the user id to context
     bot.sendMessage(chat_id,
-				  text="Bene, scegli la partita su cui vuoi giocare"
+				  text="Bene, scegli la partita su cui vuoi giocare\n"
 				  "/cancel per cancellare",
 				  reply_markup=ReplyKeyboardMarkup(
                     [[KeyboardButton(INTER_JUVE), KeyboardButton(NAPOLI_ROMA)]],
@@ -79,7 +81,7 @@ def startChooseTeam(bot, update, chat_id, user_id):
     
 def askPlayer(bot, update, chat_id, user_id):
     state[getId(chat_id, user_id)] = AWAIT_INPUT  # set the state
-    context[getId(chat_id, user_id)] = user_id  # save the user id to context
+    context[getId(chat_id, user_id)] = (user_id, update.message.text)   # save the user id to context
     bot.sendMessage(chat_id,
 				  text=u"Secondo te chi sarà il prossimo giocatore che segna?\n"
 				  "/cancel per cancellare")
@@ -88,7 +90,7 @@ def savePlayer(bot, update, chat_id, user_id):
     state[getId(chat_id, user_id)] = AWAIT_CONFIRMATION
 
     # Save the user id and the answer to context
-    context[getId(chat_id, user_id)] = (user_id, update.message.text)
+    context[getId(chat_id, user_id)] = (context[getId(chat_id, user_id)][0], context[getId(chat_id, user_id)][1], update.message.text)
     reply_markup = ReplyKeyboardMarkup(
         [[KeyboardButton(YES), KeyboardButton(NO)]],
         one_time_keyboard=True)
@@ -114,12 +116,13 @@ def getId(chat_id, user_id):
 # Sets the state back to MENU and clears the context
 def cancel(bot, update):
     chat_id = update.message.chat_id
+    user_id = update.message.from_user.id
     del state[getId(chat_id, user_id)]
     del context[getId(chat_id, user_id)]
 
 
 def help(bot, update):
-    bot.sendMessage(update.message.chat_id, text="Use /set to test this bot.")
+    bot.sendMessage(update.message.chat_id, text="Salve! Sono il tuo assistente Sky Win.")
 
 # Create the Updater and pass it your bot's token
 updater = Updater("232161513:AAEsreQl7mGA-mtPRWHmkXwFT_BRmJNO8bs")
