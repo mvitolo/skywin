@@ -1,0 +1,39 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        {% block extraheadtop %}{% endblock extraheadtop %}
+        {% block charsetutf %}<meta charset='utf-8'>{% endblock charsetutf %}
+        {% block iecompatiblitymeta %}
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!-- STYLESHEETS --><!--[if lt IE 9]><script src="js/flot/excanvas.min.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+        {% endblock iecompatiblitymeta %}
+        {% block viewport %}<meta name="viewport" content="width=device-width, initial-scale=1">{% endblock viewport %}
+
+        <title>{% block headtitle %}Django Heroku{% endblock headtitle %}</title>
+
+        {% block favicon %}{% endblock favicon %}
+        {% block style %}{% endblock style %}
+        {% block headjs %}{% endblock headjs %}
+        {% block extraheadbottom %}{% endblock extraheadbottom %}
+
+    </head>
+
+    <body class="{% block bodyclass %}{% endblock bodyclass %}">
+
+        {% block extrabodytop %}{% endblock extrabodytop %}
+        {% block bodycontent %}{% endblock bodycontent %}
+        {% block extrabodybottom %}{% endblock extrabodybottom %}
+
+        {% block bodyjs %}{% endblock bodyjs %}
+        {% block bodystyle %}{% endblock bodystyle %}
+
+		{% block googleanalytics %}{% endblock googleanalytics %}
+
+    </body>
+
+</html>
