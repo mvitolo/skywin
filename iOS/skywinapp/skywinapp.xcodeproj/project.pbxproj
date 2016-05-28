@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		ABC3BDBA1CF9EBD000281E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */; };
-		ABC3BDBC1CF9EBD000281E93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDBB1CF9EBD000281E93 /* ViewController.swift */; };
 		ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDBD1CF9EBD000281E93 /* Main.storyboard */; };
 		ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDC01CF9EBD000281E93 /* Assets.xcassets */; };
 		ABC3BDC41CF9EBD000281E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDC21CF9EBD000281E93 /* LaunchScreen.storyboard */; };
 		ABC3BDCF1CF9EBD000281E93 /* skywinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDCE1CF9EBD000281E93 /* skywinappTests.swift */; };
 		ABC3BDDA1CF9EBD100281E93 /* skywinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDD91CF9EBD100281E93 /* skywinappUITests.swift */; };
+		ABC3BDE91CF9F36600281E93 /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDE81CF9F36600281E93 /* results.json */; };
+		ABC3BDEB1CF9F56300281E93 /* SWEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDEA1CF9F56300281E93 /* SWEngine.swift */; };
+		ABC3BDF11CFA0C1400281E93 /* SWDashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */; };
+		ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */; };
 		D04291E8057F4AF9958B5347 /* Pods_skywinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534727041A009B01FB363085 /* Pods_skywinapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +43,6 @@
 		65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.debug.xcconfig"; sourceTree = "<group>"; };
 		ABC3BDB61CF9EBD000281E93 /* skywinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skywinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABC3BDBB1CF9EBD000281E93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABC3BDBE1CF9EBD000281E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABC3BDC01CF9EBD000281E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC3BDC31CF9EBD000281E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		ABC3BDD51CF9EBD000281E93 /* skywinappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skywinappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC3BDD91CF9EBD100281E93 /* skywinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skywinappUITests.swift; sourceTree = "<group>"; };
 		ABC3BDDB1CF9EBD100281E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC3BDE81CF9F36600281E93 /* results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = results.json; sourceTree = "<group>"; };
+		ABC3BDEA1CF9F56300281E93 /* SWEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWEngine.swift; sourceTree = "<group>"; };
+		ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWDashboardTableViewController.swift; sourceTree = "<group>"; };
+		ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GettyImages-493260332.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		ABC3BDAD1CF9EBD000281E93 = {
 			isa = PBXGroup;
 			children = (
+				ABC3BDE71CF9F36600281E93 /* resources */,
 				ABC3BDB81CF9EBD000281E93 /* skywinapp */,
 				ABC3BDCD1CF9EBD000281E93 /* skywinappTests */,
 				ABC3BDD81CF9EBD100281E93 /* skywinappUITests */,
@@ -113,12 +120,14 @@
 		ABC3BDB81CF9EBD000281E93 /* skywinapp */ = {
 			isa = PBXGroup;
 			children = (
+				ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */,
 				ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */,
-				ABC3BDBB1CF9EBD000281E93 /* ViewController.swift */,
 				ABC3BDBD1CF9EBD000281E93 /* Main.storyboard */,
 				ABC3BDC01CF9EBD000281E93 /* Assets.xcassets */,
 				ABC3BDC21CF9EBD000281E93 /* LaunchScreen.storyboard */,
 				ABC3BDC51CF9EBD000281E93 /* Info.plist */,
+				ABC3BDEA1CF9F56300281E93 /* SWEngine.swift */,
+				ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */,
 			);
 			path = skywinapp;
 			sourceTree = "<group>";
@@ -139,6 +148,15 @@
 				ABC3BDDB1CF9EBD100281E93 /* Info.plist */,
 			);
 			path = skywinappUITests;
+			sourceTree = "<group>";
+		};
+		ABC3BDE71CF9F36600281E93 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABC3BDE81CF9F36600281E93 /* results.json */,
+			);
+			name = resources;
+			path = ../resources;
 			sourceTree = "<group>";
 		};
 		E496B2D18868F3229AE7DDD9 /* Frameworks */ = {
@@ -258,6 +276,8 @@
 			files = (
 				ABC3BDC41CF9EBD000281E93 /* LaunchScreen.storyboard in Resources */,
 				ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */,
+				ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */,
+				ABC3BDE91CF9F36600281E93 /* results.json in Resources */,
 				ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,8 +351,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC3BDBC1CF9EBD000281E93 /* ViewController.swift in Sources */,
+				ABC3BDF11CFA0C1400281E93 /* SWDashboardTableViewController.swift in Sources */,
 				ABC3BDBA1CF9EBD000281E93 /* AppDelegate.swift in Sources */,
+				ABC3BDEB1CF9F56300281E93 /* SWEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

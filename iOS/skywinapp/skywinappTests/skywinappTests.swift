@@ -33,4 +33,12 @@ class skywinappTests: XCTestCase {
         }
     }
     
+    func testJSONData(){
+        
+        SWEngine.sharedInstance.getDashboard( {(dictionary) -> Void in
+            
+            }, failureBlock:  {(error) -> Void in
+        })
+    }
+    
 }
