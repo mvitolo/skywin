@@ -17,6 +17,7 @@
 		ABC3BDEB1CF9F56300281E93 /* SWEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDEA1CF9F56300281E93 /* SWEngine.swift */; };
 		ABC3BDF11CFA0C1400281E93 /* SWDashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */; };
 		ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */; };
+		ABC3BDFB1CFA2D5100281E93 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDFA1CFA2D5100281E93 /* Media.xcassets */; };
 		D04291E8057F4AF9958B5347 /* Pods_skywinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534727041A009B01FB363085 /* Pods_skywinapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		ABC3BDEA1CF9F56300281E93 /* SWEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWEngine.swift; sourceTree = "<group>"; };
 		ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWDashboardTableViewController.swift; sourceTree = "<group>"; };
 		ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GettyImages-493260332.jpg"; sourceTree = "<group>"; };
+		ABC3BDFA1CFA2D5100281E93 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		ABC3BDAD1CF9EBD000281E93 = {
 			isa = PBXGroup;
 			children = (
+				ABC3BDFA1CFA2D5100281E93 /* Media.xcassets */,
 				ABC3BDE71CF9F36600281E93 /* resources */,
 				ABC3BDB81CF9EBD000281E93 /* skywinapp */,
 				ABC3BDCD1CF9EBD000281E93 /* skywinappTests */,
@@ -278,6 +281,7 @@
 				ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */,
 				ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */,
 				ABC3BDE91CF9F36600281E93 /* results.json in Resources */,
+				ABC3BDFB1CFA2D5100281E93 /* Media.xcassets in Resources */,
 				ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
