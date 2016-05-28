@@ -53,5 +53,9 @@ class Match(models.Model):
     home_score = models.IntegerField(default=0)
     guest_score = models.IntegerField(default=0)
 
+    class Meta:
+        verbose_name = 'Match'
+        verbose_name_plural = 'Matches'
+
     def __unicode__(self):
         return u'%s %s - %s %s' % (self.home_team.name, self.home_score, self.guest_score, self.guest_team.name)
