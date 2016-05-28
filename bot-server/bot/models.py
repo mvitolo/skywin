@@ -28,3 +28,12 @@ class UserProfile(models.Model):
 
     def __unicode__(self):
         return u'%s' % self.user.username
+
+
+class Player(models.Model):
+    firstName = models.CharField(max_length=100)
+    secondName = models.CharField(max_length=100)
+    tally = models.IntegerField(default=0)
+
+    def __unicode__(self):
+        return u'%s' % self.name
