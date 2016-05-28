@@ -15,7 +15,8 @@ class SWDashboardTableViewController: UITableViewController {
     @IBOutlet weak var guestScore: UILabel!
     @IBOutlet weak var guestTeam: UILabel!
     
-    var players: JSON!
+    var homeplayers: JSON!
+    var guestplayers: JSON!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,14 +40,18 @@ class SWDashboardTableViewController: UITableViewController {
     func refreshValues(){
         SWEngine.sharedInstance.getDashboard({(description) in
             
-            self.guestScore.text = String(format: "%d" ,description["guestScore"].int!)
-            self.guestTeam.text = description["guestTeam"].string
-            self.homeScore.text = String(format: "%d" ,description["homeScore"].int!)
-            self.homeTeam.text = description["homeTeam"].string
+            self.guestScore.text = String(format: "%d" ,description["guest_score"].int!)
+            self.guestTeam.text = description["guest_team"]["name"].string
+            self.homeScore.text = String(format: "%d" ,description["home_score"].int!)
+            self.homeTeam.text = description["home_team"]["name"].string
             
-            self.players = description["players"]
-            
+            self.homeplayers = description["home_team"]["players"]
+            self.guestplayers = description["guest_team"]["players"]
+            dispatch_async(dispatch_get_main_queue(), {
+
             self.tableView.reloadData()
+                
+            })
             
             }, failureBlock: {(error) in })
     }
@@ -78,9 +83,18 @@ class SWDashboardTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return (players["home"].array?.count)!
+
+            if self.homeplayers != nil {
+                return (self.homeplayers.array?.count)!
+            }
+            return 0
         case 1:
-            return (players["guest"].array?.count)!
+            
+            if self.guestplayers != nil {
+                return (self.guestplayers.array?.count)!
+            }
+                
+            return 0
         default:
             return 0
         }
@@ -89,16 +103,16 @@ class SWDashboardTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SWPlayerCell", forIndexPath: indexPath)
-        var team : String!
+        var res : String!
+
         switch indexPath.section {
         case 0:
-            team = "home"
+            res = String(format: "%@ %@ - %d",  homeplayers[indexPath.row]["first_name"].string!,  homeplayers[indexPath.row]["second_name"].string!, homeplayers[indexPath.row]["tally"].int!)
         case 1:
-            team = "guest"
+            res = String(format: "%@ %@ - %d",  guestplayers[indexPath.row]["first_name"].string!,  guestplayers[indexPath.row]["second_name"].string!, guestplayers[indexPath.row]["tally"].int!)
         default:
-            team = "home"
+            res = "home"
         }
-        let res = String(format: "%@ %@ - %d",  players[team][indexPath.row]["firstName"].string!,  players[team][indexPath.row]["secondName"].string!, players[team][indexPath.row]["tally"].int!)
         
         cell.textLabel?.text = res
 

@@ -14,8 +14,61 @@ class SWEngine: NSObject {
     var newCookie : NSHTTPCookie!
     static let sharedInstance: SWEngine = SWEngine()
     
+    var numberofvotes : Int!
+    
+    
+    
+    func makePOSTRequest(urlstring: String, successBlock: (dictionary: JSON) -> Void, failureBlock:(error: NSError?) -> Void){
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: urlstring)!)
+        request.HTTPMethod = "GET"
+        
+        let session = NSURLSession.sharedSession()
+        
+        let task = session.dataTaskWithRequest(request) { data, response, error in
+            // make sure there wasn't a fundamental networking error
+            
+            guard error == nil && data != nil else {
+                print(error)
+                return
+            }
+            
+            // if you're going to check for NSHTTPURLResponse, then do something useful
+            // with it, e.g. see if server status code indicates that everything is OK
+            
+            if let httpResponse = response as? NSHTTPURLResponse {
+                if httpResponse.statusCode != 200 {
+                    print("statusCode != \(httpResponse.statusCode)")
+                }
+            }
+            
+            // since you set `Accept` to JSON, I'd assume you'd want to parse it:
+            
+            let responseObject = JSON(data: data!)
+            print(responseObject)
+            if responseObject["status"]  != "NOK_SESS" && responseObject["status"]  != "KO" {
+                
+                successBlock(dictionary: responseObject)
+            } else {
+                if responseObject["status"]  == "KO" {
+                    
+                    failureBlock(error: error)
+                    return
+                }
+            }
+            
+            
+        }
+        task.resume()
+    }
+    
+
+    
+    
     func getDashboard( successBlock: (dictionary: JSON)-> Void, failureBlock: (error: NSError?)-> Void) {
         
+        makePOSTRequest("https://skywin.herokuapp.com/api/matches/1/?format=json", successBlock: successBlock, failureBlock: failureBlock)
+       /*
         if let path = NSBundle.mainBundle().pathForResource("results", ofType: "json") {
             do {
                 let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
@@ -30,7 +83,7 @@ class SWEngine: NSObject {
             }
         } else {
             print("Invalid filename/path.")
-        }
+        }*/
 
         
     }

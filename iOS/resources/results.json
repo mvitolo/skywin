@@ -1,52 +1,59 @@
 {
-  "matchid": "1",
-  "homeTeam": "Juventus",
-  "guestTeam": "Inter",
-  "homeScore": 1,
-  "guestScore": 0,
-  "players":
-    {
-      "home":
-        [
-          {
-            "playerid": "1",
-            "firstName": "Leonardo",
-            "secondName": "Bonucci",
-            "tally": 60
-          },
-          {
-            "playerid": "2",
-            "firstName": "Alvaro",
-            "secondName": "Morata",
-            "tally": 40
-          },
-          {
-            "playerid": "3",
-            "firstName": "Claudio",
-            "secondName": "Marchisio",
-            "tally": 60
-          }
-        ],
-      "guest":
-        [
-          {
-            "playerid": "4",
-            "firstName": "Mauro",
-            "secondName": "Icardi",
-            "tally": 160
-          },
-          {
-            "playerid": "5",
-            "firstName": "Rodrigo",
-            "secondName": "Palacio",
-            "tally": 20
-          },
-          {
-            "playerid": "6",
-            "firstName": "Ivan",
-            "secondName": "Perisic",
-            "tally": 70
-          }
-        ]
-    }
+    "id": 1,
+    "home_team": {
+        "id": 4,
+        "name": "Inter",
+        "players": [
+                    {
+                    "id": 6,
+                    "first_name": "Rodrigo",
+                    "second_name": "Palacio",
+                    "tally": 66,
+                    "team": "http://skywin.herokuapp.com/api/teams/4/"
+                    },
+                    {
+                    "id": 4,
+                    "first_name": "Mauro",
+                    "second_name": "Icardi",
+                    "tally": 50,
+                    "team": "http://skywin.herokuapp.com/api/teams/4/"
+                    },
+                    {
+                    "id": 3,
+                    "first_name": "Ivan",
+                    "second_name": "Perisic",
+                    "tally": 20,
+                    "team": "http://skywin.herokuapp.com/api/teams/4/"
+                    }
+                    ]
+    },
+    "guest_team": {
+        "id": 1,
+        "name": "Juventus",
+        "players": [
+                    {
+                    "id": 5,
+                    "first_name": "Claudio",
+                    "second_name": "Marchisio",
+                    "tally": 25,
+                    "team": "http://skywin.herokuapp.com/api/teams/1/"
+                    },
+                    {
+                    "id": 2,
+                    "first_name": "Alvaro",
+                    "second_name": "Morata",
+                    "tally": 0,
+                    "team": "http://skywin.herokuapp.com/api/teams/1/"
+                    },
+                    {
+                    "id": 1,
+                    "first_name": "Leonardo",
+                    "second_name": "Bonucci",
+                    "tally": 40, 
+                    "team": "http://skywin.herokuapp.com/api/teams/1/"
+                    }
+                    ]
+    }, 
+    "home_score": 0, 
+    "guest_score": 2
 }
