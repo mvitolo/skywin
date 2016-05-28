@@ -14,6 +14,7 @@
 		ABC3BDC41CF9EBD000281E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDC21CF9EBD000281E93 /* LaunchScreen.storyboard */; };
 		ABC3BDCF1CF9EBD000281E93 /* skywinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDCE1CF9EBD000281E93 /* skywinappTests.swift */; };
 		ABC3BDDA1CF9EBD100281E93 /* skywinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDD91CF9EBD100281E93 /* skywinappUITests.swift */; };
+		D04291E8057F4AF9958B5347 /* Pods_skywinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534727041A009B01FB363085 /* Pods_skywinapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061BB2F0DDD58448F261DF90 /* Pods-skywinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.release.xcconfig"; sourceTree = "<group>"; };
+		534727041A009B01FB363085 /* Pods_skywinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skywinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.debug.xcconfig"; sourceTree = "<group>"; };
 		ABC3BDB61CF9EBD000281E93 /* skywinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skywinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABC3BDBB1CF9EBD000281E93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04291E8057F4AF9958B5347 /* Pods_skywinapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5857E6D90E514DDE19FACEF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */,
+				061BB2F0DDD58448F261DF90 /* Pods-skywinapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ABC3BDAD1CF9EBD000281E93 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				ABC3BDCD1CF9EBD000281E93 /* skywinappTests */,
 				ABC3BDD81CF9EBD100281E93 /* skywinappUITests */,
 				ABC3BDB71CF9EBD000281E93 /* Products */,
+				5857E6D90E514DDE19FACEF3 /* Pods */,
+				E496B2D18868F3229AE7DDD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = skywinappUITests;
 			sourceTree = "<group>";
 		};
+		E496B2D18868F3229AE7DDD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				534727041A009B01FB363085 /* Pods_skywinapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABC3BDDE1CF9EBD100281E93 /* Build configuration list for PBXNativeTarget "skywinapp" */;
 			buildPhases = (
+				5071BF65B001FBFF0226B28A /* 📦 Check Pods Manifest.lock */,
 				ABC3BDB21CF9EBD000281E93 /* Sources */,
 				ABC3BDB31CF9EBD000281E93 /* Frameworks */,
 				ABC3BDB41CF9EBD000281E93 /* Resources */,
+				2491209A0513E33CC9E43CA3 /* 📦 Embed Pods Frameworks */,
+				73C74E605E337F8731767403 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2491209A0513E33CC9E43CA3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5071BF65B001FBFF0226B28A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73C74E605E337F8731767403 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABC3BDB21CF9EBD000281E93 /* Sources */ = {
@@ -399,6 +474,7 @@
 		};
 		ABC3BDDF1CF9EBD100281E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = skywinapp/Info.plist;
@@ -410,6 +486,7 @@
 		};
 		ABC3BDE01CF9EBD100281E93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 061BB2F0DDD58448F261DF90 /* Pods-skywinapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = skywinapp/Info.plist;
@@ -484,6 +561,7 @@
 				ABC3BDE01CF9EBD100281E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC3BDE11CF9EBD100281E93 /* Build configuration list for PBXNativeTarget "skywinappTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				ABC3BDE31CF9EBD100281E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC3BDE41CF9EBD100281E93 /* Build configuration list for PBXNativeTarget "skywinappUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				ABC3BDE61CF9EBD100281E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
