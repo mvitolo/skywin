@@ -25,8 +25,6 @@ SECRET_KEY = "zxu_l$p+swpk7sg&(3&*@j0jai&+ov+@okh59x+r5v6tfhquin"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
-
 
 # Application definition
 
@@ -45,6 +43,7 @@ INSTALLED_APPS = (
 
     # third party apps
     'rest_framework',
+    'telegrambot',
 
 )
 
@@ -62,13 +61,16 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'skywin.urls'
 
+
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['bot-server/templates', ],
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',  # Guido Meda docet
+        'DIRS': ['templates', ],
         'APP_DIRS': True,
         'OPTIONS': {
+            'debug': DEBUG,
             'context_processors': [
+                # Django
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
@@ -78,7 +80,6 @@ TEMPLATES = [
     },
 ]
 
-TEMPLATE_CONTEXT_PROCESSORS = ()
 
 WSGI_APPLICATION = 'skywin.wsgi.application'
 
@@ -170,6 +171,14 @@ LOGIN_URL = "/login/"
 PRIVACY_POLICY_URL = ""
 FACEBOOK_APP_ID = "..."
 EMAIL_ADDRESS_FOR_SUPPORT = "support@" + DOMAIN
+
+
+################
+# Telegram Bot #
+################
+TELEGRAM_BOT_HANDLERS_CONF = "bot.bot_handlers"
+TELEGRAM_BOT_TOKEN_EXPIRATION = "2"  # tow hours before a token expires
+TELEGRAM_BOT_TOKEN = "232161513:AAEsreQl7mGA-mtPRWHmkXwFT_BRmJNO8bs"
 
 
 #########################
