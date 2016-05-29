@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		497DEA261CFAD106008C2DD8 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 497DEA251CFAD106008C2DD8 /* profile.png */; };
-		497DEA2C1CFAD6FE008C2DD8 /* napoli.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 497DEA2B1CFAD6FE008C2DD8 /* napoli.JPG */; };
+		497DEA321CFAE0E2008C2DD8 /* napoli.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 497DEA311CFAE0E2008C2DD8 /* napoli.JPG */; };
 		ABC3BDBA1CF9EBD000281E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */; };
 		ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDBD1CF9EBD000281E93 /* Main.storyboard */; };
 		ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDC01CF9EBD000281E93 /* Assets.xcassets */; };
@@ -53,7 +53,7 @@
 /* Begin PBXFileReference section */
 		061BB2F0DDD58448F261DF90 /* Pods-skywinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.release.xcconfig"; sourceTree = "<group>"; };
 		497DEA251CFAD106008C2DD8 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
-		497DEA2B1CFAD6FE008C2DD8 /* napoli.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = napoli.JPG; path = ../../../../../../Desktop/napoli.JPG; sourceTree = "<group>"; };
+		497DEA311CFAE0E2008C2DD8 /* napoli.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = napoli.JPG; sourceTree = "<group>"; };
 		534727041A009B01FB363085 /* Pods_skywinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skywinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.debug.xcconfig"; sourceTree = "<group>"; };
 		ABC3BDB61CF9EBD000281E93 /* skywinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skywinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,7 @@
 		ABE499871CFABE8F000C54DD /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				497DEA2B1CFAD6FE008C2DD8 /* napoli.JPG */,
+				497DEA311CFAE0E2008C2DD8 /* napoli.JPG */,
 				497DEA251CFAD106008C2DD8 /* profile.png */,
 				ABE499981CFAC058000C54DD /* player.png */,
 				ABE499881CFABE8F000C54DD /* Bonucci.jpg */,
@@ -331,7 +331,7 @@
 				ABE499921CFABE8F000C54DD /* Palacio.jpg in Resources */,
 				ABE499931CFABE8F000C54DD /* Perisic.jpg in Resources */,
 				ABE4998F1CFABE8F000C54DD /* Icardi.jpg in Resources */,
-				497DEA2C1CFAD6FE008C2DD8 /* napoli.JPG in Resources */,
+				497DEA321CFAE0E2008C2DD8 /* napoli.JPG in Resources */,
 				ABC3BDFB1CFA2D5100281E93 /* Media.xcassets in Resources */,
 				ABE499901CFABE8F000C54DD /* Marchisio.jpg in Resources */,
 				ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */,
