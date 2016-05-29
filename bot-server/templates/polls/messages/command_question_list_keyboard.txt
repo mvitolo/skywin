@@ -1,1 +1,0 @@
-{% load telegrambot_filters %}{% autoescape off %}{{ questions |keyboard_field:"command=question&field=id&per_line=1"}}{% endautoescape %}
