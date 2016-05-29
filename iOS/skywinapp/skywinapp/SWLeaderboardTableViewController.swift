@@ -10,6 +10,8 @@ import UIKit
 
 class SWLeaderboardTableViewController: UITableViewController {
 
+    let players = NSMutableArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +21,12 @@ class SWLeaderboardTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        players.addObject(["name":"Necchi","points":"1987"])
         
+        players.addObject(["name":"Lello Mascetti","points":"1543"])
+        players.addObject(["name":"Giorgio Perozzi","points":"1421"])
+        players.addObject(["name":"Rambaldo Melandri","points":"1245"])
+        players.addObject(["name":"Sassaroli","points":"987"])
         
         
     }
@@ -38,13 +45,16 @@ class SWLeaderboardTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return players.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SWLeaderboardCell", forIndexPath: indexPath) as! SWLeaderboardCell
 
+      //  cell.playerName.text = players.objectAtIndex(indexPath.row)["name"]
+       // cell.playerspoints.text = players[indexPath.row]["points"]
+        
         // Configure the cell...
 
         return cell
