@@ -52,8 +52,6 @@ class SWLeaderboardTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SWLeaderboardCell", forIndexPath: indexPath) as! SWLeaderboardCell
 
-      //  cell.playerName.text = players.objectAtIndex(indexPath.row)["name"]
-       // cell.playerspoints.text = players[indexPath.row]["points"]
         
         // Configure the cell...
 
