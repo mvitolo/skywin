@@ -42,16 +42,16 @@ class SWDashboardTableViewController: UITableViewController {
     func refreshValues(){
         SWEngine.sharedInstance.getDashboard({(description) in
             
-            self.guestScore.text = String(format: "%d" ,description["guest_score"].int!)
-            self.guestTeam.text = description["guest_team"]["name"].string
-            self.homeScore.text = String(format: "%d" ,description["home_score"].int!)
-            self.homeTeam.text = description["home_team"]["name"].string
             
             self.homeplayers = description["home_team"]["players"]
             self.guestplayers = description["guest_team"]["players"]
             dispatch_async(dispatch_get_main_queue(), {
+                self.guestScore.text = String(format: "%d" ,description["guest_score"].int!)
+                self.guestTeam.text = description["guest_team"]["name"].string
+                self.homeScore.text = String(format: "%d" ,description["home_score"].int!)
+                self.homeTeam.text = description["home_team"]["name"].string
 
-            self.tableView.reloadData()
+                self.tableView.reloadData()
                 
             })
             
