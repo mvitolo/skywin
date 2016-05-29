@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
 
     # local apps
-    # 'bot.apps.BotConfig',
+    'bot',
     'polls.apps.PollsConfig',
 
     # third party apps
