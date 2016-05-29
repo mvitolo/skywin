@@ -3,6 +3,7 @@ from rest_framework import routers
 from .views import TeamViewSet, PlayerViewSet, MatchViewSet, IndexView, DetailView, ResultsView, vote
 
 
+app_name = 'bot'
 urlpatterns = patterns(
     'bot.views',
 
