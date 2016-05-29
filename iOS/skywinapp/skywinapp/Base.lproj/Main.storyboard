@@ -91,10 +91,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="kGx-gQ-efA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="kGx-gQ-efA">
                                 <rect key="frame" x="225" y="100" width="150" height="150"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alessia Mancini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G9-3t-o33">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Alessia Mancini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G9-3t-o33">
                                 <rect key="frame" x="197" y="258" width="206" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,8 +106,24 @@
                                 <color key="textColor" red="0.81960784313725488" green="0.87450980392156863" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="napoli.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-2Q-T1Z">
+                                <rect key="frame" x="-17" y="381" width="635" height="337"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.37647058823529411" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kGx-gQ-efA" firstAttribute="top" secondItem="w1g-pP-Mpe" secondAttribute="bottom" constant="36" id="C0p-v9-4kW"/>
+                            <constraint firstItem="kGx-gQ-efA" firstAttribute="top" secondItem="w1g-pP-Mpe" secondAttribute="bottom" constant="36" id="T0h-2r-SrI"/>
+                            <constraint firstItem="6G9-3t-o33" firstAttribute="top" secondItem="kGx-gQ-efA" secondAttribute="bottom" constant="8" id="ejH-A1-K3e"/>
+                            <constraint firstItem="kGx-gQ-efA" firstAttribute="centerX" secondItem="txy-O4-tZd" secondAttribute="centerX" id="vsQ-DX-T8n"/>
+                            <constraint firstItem="6G9-3t-o33" firstAttribute="top" secondItem="kGx-gQ-efA" secondAttribute="bottom" constant="8" id="yQQ-pD-Gxz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="C0p-v9-4kW"/>
+                                <exclude reference="ejH-A1-K3e"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="ve4-0b-xz6"/>
                 </viewController>
@@ -360,6 +376,7 @@
     </scenes>
     <resources>
         <image name="GettyImages-493260332.jpg" width="800" height="532"/>
+        <image name="napoli.JPG" width="3500" height="2324"/>
         <image name="player.png" width="128" height="128"/>
         <image name="profile.png" width="2354" height="2354"/>
     </resources>
