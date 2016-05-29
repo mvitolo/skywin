@@ -25,8 +25,8 @@ urlpatterns = patterns(
 
 )
 
-urlpatterns += [
-    url(r'^polls/', include('polls.urls')),
+urlpatterns += (
+    url(r'^polls/', include('polls.urls', namespace="polls")),
     url(r'^telegrambot/', include('telegrambot.urls', namespace="telegrambot")),
     url(r'^register/', CreateView.as_view(
             template_name='registration/register.html',
@@ -34,4 +34,4 @@ urlpatterns += [
             success_url='/polls'), name='register'),
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
-]
+)
