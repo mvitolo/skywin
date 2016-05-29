@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		497DEA261CFAD106008C2DD8 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 497DEA251CFAD106008C2DD8 /* profile.png */; };
-		497DEA2C1CFAD6FE008C2DD8 /* napoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 497DEA2B1CFAD6FE008C2DD8 /* napoli.jpg */; };
+		497DEA321CFAE0E2008C2DD8 /* napoli.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 497DEA311CFAE0E2008C2DD8 /* napoli.JPG */; };
 		ABC3BDBA1CF9EBD000281E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */; };
 		ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDBD1CF9EBD000281E93 /* Main.storyboard */; };
 		ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDC01CF9EBD000281E93 /* Assets.xcassets */; };
@@ -20,9 +20,6 @@
 		ABC3BDF11CFA0C1400281E93 /* SWDashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */; };
 		ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */; };
 		ABC3BDFB1CFA2D5100281E93 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDFA1CFA2D5100281E93 /* Media.xcassets */; };
-		ABD2E9351CFAE09E00E981E7 /* Have-Fun@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD2E9321CFAE09E00E981E7 /* Have-Fun@2x.png */; };
-		ABD2E9361CFAE09E00E981E7 /* leaderboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD2E9331CFAE09E00E981E7 /* leaderboard@2x.png */; };
-		ABD2E9371CFAE09E00E981E7 /* playericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD2E9341CFAE09E00E981E7 /* playericon@2x.png */; };
 		ABE4998E1CFABE8F000C54DD /* Bonucci.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE499881CFABE8F000C54DD /* Bonucci.jpg */; };
 		ABE4998F1CFABE8F000C54DD /* Icardi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE499891CFABE8F000C54DD /* Icardi.jpg */; };
 		ABE499901CFABE8F000C54DD /* Marchisio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE4998A1CFABE8F000C54DD /* Marchisio.jpg */; };
@@ -56,7 +53,7 @@
 /* Begin PBXFileReference section */
 		061BB2F0DDD58448F261DF90 /* Pods-skywinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.release.xcconfig"; sourceTree = "<group>"; };
 		497DEA251CFAD106008C2DD8 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
-		497DEA2B1CFAD6FE008C2DD8 /* napoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = napoli.jpg; path = ../../../../../../Desktop/napoli.jpg; sourceTree = "<group>"; };
+		497DEA311CFAE0E2008C2DD8 /* napoli.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = napoli.JPG; sourceTree = "<group>"; };
 		534727041A009B01FB363085 /* Pods_skywinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skywinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.debug.xcconfig"; sourceTree = "<group>"; };
 		ABC3BDB61CF9EBD000281E93 /* skywinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skywinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,9 +73,6 @@
 		ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWDashboardTableViewController.swift; sourceTree = "<group>"; };
 		ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GettyImages-493260332.jpg"; sourceTree = "<group>"; };
 		ABC3BDFA1CFA2D5100281E93 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		ABD2E9321CFAE09E00E981E7 /* Have-Fun@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Have-Fun@2x.png"; sourceTree = "<group>"; };
-		ABD2E9331CFAE09E00E981E7 /* leaderboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leaderboard@2x.png"; sourceTree = "<group>"; };
-		ABD2E9341CFAE09E00E981E7 /* playericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playericon@2x.png"; sourceTree = "<group>"; };
 		ABE499881CFABE8F000C54DD /* Bonucci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bonucci.jpg; sourceTree = "<group>"; };
 		ABE499891CFABE8F000C54DD /* Icardi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Icardi.jpg; sourceTree = "<group>"; };
 		ABE4998A1CFABE8F000C54DD /* Marchisio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Marchisio.jpg; sourceTree = "<group>"; };
@@ -199,10 +193,7 @@
 		ABE499871CFABE8F000C54DD /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				ABD2E9321CFAE09E00E981E7 /* Have-Fun@2x.png */,
-				ABD2E9331CFAE09E00E981E7 /* leaderboard@2x.png */,
-				ABD2E9341CFAE09E00E981E7 /* playericon@2x.png */,
-				497DEA2B1CFAD6FE008C2DD8 /* napoli.jpg */,
+				497DEA311CFAE0E2008C2DD8 /* napoli.JPG */,
 				497DEA251CFAD106008C2DD8 /* profile.png */,
 				ABE499981CFAC058000C54DD /* player.png */,
 				ABE499881CFABE8F000C54DD /* Bonucci.jpg */,
@@ -334,18 +325,15 @@
 				ABE499991CFAC058000C54DD /* player.png in Resources */,
 				ABC3BDC41CF9EBD000281E93 /* LaunchScreen.storyboard in Resources */,
 				ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */,
-				ABD2E9371CFAE09E00E981E7 /* playericon@2x.png in Resources */,
 				ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */,
 				ABC3BDE91CF9F36600281E93 /* results.json in Resources */,
-				ABD2E9351CFAE09E00E981E7 /* Have-Fun@2x.png in Resources */,
 				ABE499911CFABE8F000C54DD /* Morata.jpg in Resources */,
 				ABE499921CFABE8F000C54DD /* Palacio.jpg in Resources */,
 				ABE499931CFABE8F000C54DD /* Perisic.jpg in Resources */,
 				ABE4998F1CFABE8F000C54DD /* Icardi.jpg in Resources */,
-				497DEA2C1CFAD6FE008C2DD8 /* napoli.jpg in Resources */,
+				497DEA321CFAE0E2008C2DD8 /* napoli.JPG in Resources */,
 				ABC3BDFB1CFA2D5100281E93 /* Media.xcassets in Resources */,
 				ABE499901CFABE8F000C54DD /* Marchisio.jpg in Resources */,
-				ABD2E9361CFAE09E00E981E7 /* leaderboard@2x.png in Resources */,
 				ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */,
 				497DEA261CFAD106008C2DD8 /* profile.png in Resources */,
 			);
