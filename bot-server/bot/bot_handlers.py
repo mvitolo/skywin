@@ -1,5 +1,4 @@
-from .bot_views import StartCommandView, UnknownCommandView, \
-    QuestionCommandView, VoteCommandView, HelpCommandView
+from .bot_views import StartCommandView, UnknownCommandView, QuestionCommandView, VoteCommandView, HelpCommandView
 
 from telegrambot.handlers import command, unknown_command
 from telegrambot.bot_views.decorators import login_required
