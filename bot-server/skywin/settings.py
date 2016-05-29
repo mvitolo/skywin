@@ -40,8 +40,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
 
     # local apps
-    'bot.apps.BotConfig',
-    # 'polls.apps.PollsConfig',
+    # 'bot.apps.BotConfig',
+    'polls.apps.PollsConfig',
 
     # third party apps
     'rest_framework',
@@ -181,8 +181,10 @@ EMAIL_ADDRESS_FOR_SUPPORT = "support@" + DOMAIN
 # Telegram Bot #
 ################
 TELEGRAM_BOT_TOKEN_EXPIRATION = "2"  # tow hours before a token expires
-LOGIN_REDIRECT_URL = '/bot/'
-TELEGRAM_BOT_HANDLERS_CONF = "bot.bot_handlers"
+# LOGIN_REDIRECT_URL = '/bot/'
+# TELEGRAM_BOT_HANDLERS_CONF = "bot.bot_handlers"
+LOGIN_REDIRECT_URL = '/polls/'
+TELEGRAM_BOT_HANDLERS_CONF = "polls.bot_handlers"
 
 
 #########################
