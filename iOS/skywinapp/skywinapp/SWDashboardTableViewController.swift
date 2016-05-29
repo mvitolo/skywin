@@ -22,7 +22,9 @@ class SWDashboardTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.homeScore.layer.cornerRadius = self.homeScore.frame.size.width / 2;
+        self.homeScore.layer.masksToBounds = true
         self.guestScore.layer.cornerRadius = self.guestScore.frame.size.width / 2;
+        self.guestScore.layer.masksToBounds = true
 
         
         // Uncomment the following line to preserve selection between presentations
@@ -36,7 +38,7 @@ class SWDashboardTableViewController: UITableViewController {
 
         
     }
-    
+    //1960aa
     func refreshValues(){
         SWEngine.sharedInstance.getDashboard({(description) in
             
@@ -102,19 +104,30 @@ class SWDashboardTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SWPlayerCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("SWPlayerCell", forIndexPath: indexPath) as! SWPlayerCell
         var res : String!
+        var imagename: String!
+        var tally: String!
 
         switch indexPath.section {
         case 0:
             res = String(format: "%@ %@ - %d",  homeplayers[indexPath.row]["first_name"].string!,  homeplayers[indexPath.row]["second_name"].string!, homeplayers[indexPath.row]["tally"].int!)
+            imagename = String(format: "%@.jpg", homeplayers[indexPath.row]["second_name"].string!)
+            tally = String(format: "%d", homeplayers[indexPath.row]["tally"].int!)
+
+            
         case 1:
             res = String(format: "%@ %@ - %d",  guestplayers[indexPath.row]["first_name"].string!,  guestplayers[indexPath.row]["second_name"].string!, guestplayers[indexPath.row]["tally"].int!)
+            imagename = String(format: "%@.jpg", guestplayers[indexPath.row]["second_name"].string!)
+            tally = String(format: "%d", guestplayers[indexPath.row]["tally"].int!)
         default:
             res = "home"
         }
         
-        cell.textLabel?.text = res
+        cell.playerName?.text = res
+        cell.playerimage.image = UIImage(named: imagename)
+        cell.tally.text = tally
+        cell.backgroundColor = SWEngine.sharedInstance.hexStringToUIColor("#1960aa")
 
         // Configure the cell...
 
@@ -166,5 +179,6 @@ class SWDashboardTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

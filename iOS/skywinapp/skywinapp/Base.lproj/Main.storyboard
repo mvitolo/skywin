@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hjE-9R-ChR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wad-4j-rgP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Dashboard-->
+        <!--Gioca-->
         <scene sceneID="sn8-Fp-tOS">
             <objects>
                 <navigationController id="hjE-9R-ChR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dashboard" id="12q-rJ-sAA"/>
+                    <tabBarItem key="tabBarItem" title="Gioca" id="4ge-9n-LK3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Bc-BP-acb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,22 +23,49 @@
             </objects>
             <point key="canvasLocation" x="549" y="-453"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Leaderboad-->
         <scene sceneID="UxK-Ry-L3c">
             <objects>
-                <tableViewController id="AAR-WG-4tC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="88A-GH-M1u">
+                <tableViewController id="AAR-WG-4tC" customClass="SWLeaderboardTableViewController" customModule="skywinapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="88A-GH-M1u">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.37647058823529411" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="AJg-is-ogM">
+                            <rect key="frame" x="0.0" y="142" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IRc-yH-m0V">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SWLeaderboardCell" rowHeight="50" id="IRc-yH-m0V" customClass="SWLeaderboardCell" customModule="skywinapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IRc-yH-m0V" id="BXM-No-fam">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player.png" translatesAutoresizingMaskIntoConstraints="NO" id="4hk-68-U5h">
+                                            <rect key="frame" x="33" y="6" width="40" height="40"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-Xy-vgy">
+                                            <rect key="frame" x="99" y="8" width="301" height="33.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-ry-g9A">
+                                            <rect key="frame" x="429" y="8" width="143" height="33.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="playerImage" destination="4hk-68-U5h" id="W1k-hL-Z2v"/>
+                                    <outlet property="playerName" destination="UNd-Xy-vgy" id="HNr-rP-bxU"/>
+                                    <outlet property="playerpoints" destination="xhd-ry-g9A" id="ubK-A3-9B5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,7 +73,7 @@
                             <outlet property="delegate" destination="AAR-WG-4tC" id="qq7-zj-byE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="zFN-0O-fj0"/>
+                    <navigationItem key="navigationItem" title="Leaderboad" id="zFN-0O-fj0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d98-j3-Gnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +83,7 @@
         <scene sceneID="04W-xN-T1K">
             <objects>
                 <navigationController title="Gioca" id="Ziu-3K-oMo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Gioca" id="7kV-N5-r6z"/>
+                    <tabBarItem key="tabBarItem" title="Leaderboard" id="7kV-N5-r6z"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZqE-Bc-8aw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -73,10 +100,11 @@
         <scene sceneID="u7R-Ox-f9D">
             <objects>
                 <tableViewController title="Dashboard" id="xL3-4e-t6f" customClass="SWDashboardTableViewController" customModule="skywinapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bD9-sw-IiY">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="bD9-sw-IiY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.37647058820000001" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.098039215690000001" green="0.37647058820000001" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="CnZ-qz-5ic">
                             <rect key="frame" x="0.0" y="64" width="600" height="169"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -203,18 +231,42 @@
                             </variation>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="oAl-d0-d3d">
-                            <rect key="frame" x="0.0" y="321" width="600" height="14"/>
+                            <rect key="frame" x="0.0" y="331" width="600" height="14"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SWPlayerCell" rowHeight="60" id="04e-B6-6mc">
-                                <rect key="frame" x="0.0" y="261" width="600" height="60"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SWPlayerCell" rowHeight="70" id="04e-B6-6mc" customClass="SWPlayerCell" customModule="skywinapp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="261" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="04e-B6-6mc" id="7cc-1y-aBX">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Ur-3w-tsS">
+                                            <rect key="frame" x="31" y="15" width="50" height="50"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHD-x0-Oki">
+                                            <rect key="frame" x="122" y="15" width="384" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEu-ed-bfj">
+                                            <rect key="frame" x="68" y="49" width="20" height="20"/>
+                                            <color key="backgroundColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.37647058820000001" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="playerName" destination="PHD-x0-Oki" id="i7w-EN-fqd"/>
+                                    <outlet property="playerimage" destination="3Ur-3w-tsS" id="gz7-Yt-H6e"/>
+                                    <outlet property="tally" destination="yEu-ed-bfj" id="SC3-Vm-8tx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -246,6 +298,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Ziu-3K-oMo" kind="relationship" relationship="viewControllers" id="QBu-1U-nfP"/>
+                        <segue destination="hjE-9R-ChR" kind="relationship" relationship="viewControllers" id="Tlr-L6-ZM4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gpt-kr-i1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,5 +308,6 @@
     </scenes>
     <resources>
         <image name="GettyImages-493260332.jpg" width="800" height="532"/>
+        <image name="player.png" width="128" height="128"/>
     </resources>
 </document>
