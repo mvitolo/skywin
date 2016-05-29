@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497DEA261CFAD106008C2DD8 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 497DEA251CFAD106008C2DD8 /* profile.png */; };
 		ABC3BDBA1CF9EBD000281E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */; };
 		ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDBD1CF9EBD000281E93 /* Main.storyboard */; };
 		ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDC01CF9EBD000281E93 /* Assets.xcassets */; };
@@ -18,6 +19,16 @@
 		ABC3BDF11CFA0C1400281E93 /* SWDashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */; };
 		ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */; };
 		ABC3BDFB1CFA2D5100281E93 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BDFA1CFA2D5100281E93 /* Media.xcassets */; };
+		ABE4998E1CFABE8F000C54DD /* Bonucci.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE499881CFABE8F000C54DD /* Bonucci.jpg */; };
+		ABE4998F1CFABE8F000C54DD /* Icardi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE499891CFABE8F000C54DD /* Icardi.jpg */; };
+		ABE499901CFABE8F000C54DD /* Marchisio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE4998A1CFABE8F000C54DD /* Marchisio.jpg */; };
+		ABE499911CFABE8F000C54DD /* Morata.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE4998B1CFABE8F000C54DD /* Morata.jpg */; };
+		ABE499921CFABE8F000C54DD /* Palacio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE4998C1CFABE8F000C54DD /* Palacio.jpg */; };
+		ABE499931CFABE8F000C54DD /* Perisic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABE4998D1CFABE8F000C54DD /* Perisic.jpg */; };
+		ABE499971CFABFD5000C54DD /* SWPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE499961CFABFD5000C54DD /* SWPlayerCell.swift */; };
+		ABE499991CFAC058000C54DD /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE499981CFAC058000C54DD /* player.png */; };
+		ABE4999B1CFACD00000C54DD /* SWLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE4999A1CFACD00000C54DD /* SWLeaderboardCell.swift */; };
+		ABE4999D1CFACD6E000C54DD /* SWLeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE4999C1CFACD6E000C54DD /* SWLeaderboardTableViewController.swift */; };
 		D04291E8057F4AF9958B5347 /* Pods_skywinapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534727041A009B01FB363085 /* Pods_skywinapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		061BB2F0DDD58448F261DF90 /* Pods-skywinapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.release.xcconfig"; sourceTree = "<group>"; };
+		497DEA251CFAD106008C2DD8 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		534727041A009B01FB363085 /* Pods_skywinapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skywinapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skywinapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skywinapp/Pods-skywinapp.debug.xcconfig"; sourceTree = "<group>"; };
 		ABC3BDB61CF9EBD000281E93 /* skywinapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skywinapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +71,16 @@
 		ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWDashboardTableViewController.swift; sourceTree = "<group>"; };
 		ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GettyImages-493260332.jpg"; sourceTree = "<group>"; };
 		ABC3BDFA1CFA2D5100281E93 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		ABE499881CFABE8F000C54DD /* Bonucci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bonucci.jpg; sourceTree = "<group>"; };
+		ABE499891CFABE8F000C54DD /* Icardi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Icardi.jpg; sourceTree = "<group>"; };
+		ABE4998A1CFABE8F000C54DD /* Marchisio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Marchisio.jpg; sourceTree = "<group>"; };
+		ABE4998B1CFABE8F000C54DD /* Morata.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Morata.jpg; sourceTree = "<group>"; };
+		ABE4998C1CFABE8F000C54DD /* Palacio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Palacio.jpg; sourceTree = "<group>"; };
+		ABE4998D1CFABE8F000C54DD /* Perisic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Perisic.jpg; sourceTree = "<group>"; };
+		ABE499961CFABFD5000C54DD /* SWPlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPlayerCell.swift; sourceTree = "<group>"; };
+		ABE499981CFAC058000C54DD /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		ABE4999A1CFACD00000C54DD /* SWLeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWLeaderboardCell.swift; sourceTree = "<group>"; };
+		ABE4999C1CFACD6E000C54DD /* SWLeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWLeaderboardTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +145,8 @@
 		ABC3BDB81CF9EBD000281E93 /* skywinapp */ = {
 			isa = PBXGroup;
 			children = (
+				ABE499961CFABFD5000C54DD /* SWPlayerCell.swift */,
+				ABE499871CFABE8F000C54DD /* resource */,
 				ABC3BDF21CFA1E8D00281E93 /* GettyImages-493260332.jpg */,
 				ABC3BDB91CF9EBD000281E93 /* AppDelegate.swift */,
 				ABC3BDBD1CF9EBD000281E93 /* Main.storyboard */,
@@ -131,6 +155,8 @@
 				ABC3BDC51CF9EBD000281E93 /* Info.plist */,
 				ABC3BDEA1CF9F56300281E93 /* SWEngine.swift */,
 				ABC3BDF01CFA0C1400281E93 /* SWDashboardTableViewController.swift */,
+				ABE4999A1CFACD00000C54DD /* SWLeaderboardCell.swift */,
+				ABE4999C1CFACD6E000C54DD /* SWLeaderboardTableViewController.swift */,
 			);
 			path = skywinapp;
 			sourceTree = "<group>";
@@ -161,6 +187,21 @@
 			name = resources;
 			path = ../resources;
 			sourceTree = "<group>";
+		};
+		ABE499871CFABE8F000C54DD /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				497DEA251CFAD106008C2DD8 /* profile.png */,
+				ABE499981CFAC058000C54DD /* player.png */,
+				ABE499881CFABE8F000C54DD /* Bonucci.jpg */,
+				ABE499891CFABE8F000C54DD /* Icardi.jpg */,
+				ABE4998A1CFABE8F000C54DD /* Marchisio.jpg */,
+				ABE4998B1CFABE8F000C54DD /* Morata.jpg */,
+				ABE4998C1CFABE8F000C54DD /* Palacio.jpg */,
+				ABE4998D1CFABE8F000C54DD /* Perisic.jpg */,
+			);
+			path = resource;
+			sourceTree = SOURCE_ROOT;
 		};
 		E496B2D18868F3229AE7DDD9 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -277,12 +318,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE4998E1CFABE8F000C54DD /* Bonucci.jpg in Resources */,
+				ABE499991CFAC058000C54DD /* player.png in Resources */,
 				ABC3BDC41CF9EBD000281E93 /* LaunchScreen.storyboard in Resources */,
 				ABC3BDC11CF9EBD000281E93 /* Assets.xcassets in Resources */,
 				ABC3BDF31CFA1E8D00281E93 /* GettyImages-493260332.jpg in Resources */,
 				ABC3BDE91CF9F36600281E93 /* results.json in Resources */,
+				ABE499911CFABE8F000C54DD /* Morata.jpg in Resources */,
+				ABE499921CFABE8F000C54DD /* Palacio.jpg in Resources */,
+				ABE499931CFABE8F000C54DD /* Perisic.jpg in Resources */,
+				ABE4998F1CFABE8F000C54DD /* Icardi.jpg in Resources */,
 				ABC3BDFB1CFA2D5100281E93 /* Media.xcassets in Resources */,
+				ABE499901CFABE8F000C54DD /* Marchisio.jpg in Resources */,
 				ABC3BDBF1CF9EBD000281E93 /* Main.storyboard in Resources */,
+				497DEA261CFAD106008C2DD8 /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,8 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE499971CFABFD5000C54DD /* SWPlayerCell.swift in Sources */,
 				ABC3BDF11CFA0C1400281E93 /* SWDashboardTableViewController.swift in Sources */,
 				ABC3BDBA1CF9EBD000281E93 /* AppDelegate.swift in Sources */,
+				ABE4999D1CFACD6E000C54DD /* SWLeaderboardTableViewController.swift in Sources */,
+				ABE4999B1CFACD00000C54DD /* SWLeaderboardCell.swift in Sources */,
 				ABC3BDEB1CF9F56300281E93 /* SWEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
