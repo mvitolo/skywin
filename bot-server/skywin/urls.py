@@ -23,9 +23,6 @@ urlpatterns = patterns(
     url(r'^api/', include(router.urls)),
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 
-)
-
-urlpatterns += (
     url(r'^polls/', include('polls.urls', namespace="polls")),
     url(r'^telegrambot/', include('telegrambot.urls', namespace="telegrambot")),
     url(r'^register/', CreateView.as_view(
@@ -33,5 +30,5 @@ urlpatterns += (
             form_class=UserCreationForm,
             success_url='/polls'), name='register'),
     url(r'^accounts/', include('django.contrib.auth.urls')),
-    url(r'^admin/', admin.site.urls),
+
 )
