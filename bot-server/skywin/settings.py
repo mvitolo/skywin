@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     # local apps
     'bot',
@@ -46,6 +47,8 @@ INSTALLED_APPS = (
     'telegrambot',
 
 )
+
+SITE_ID = 1
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -178,7 +181,6 @@ EMAIL_ADDRESS_FOR_SUPPORT = "support@" + DOMAIN
 ################
 TELEGRAM_BOT_HANDLERS_CONF = "bot.bot_handlers"
 TELEGRAM_BOT_TOKEN_EXPIRATION = "2"  # tow hours before a token expires
-TELEGRAM_BOT_TOKEN = "232161513:AAEsreQl7mGA-mtPRWHmkXwFT_BRmJNO8bs"
 
 
 #########################
