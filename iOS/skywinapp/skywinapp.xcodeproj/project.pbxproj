@@ -291,6 +291,7 @@
 				TargetAttributes = {
 					ABC3BDB51CF9EBD000281E93 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N44BFX62BJ;
 					};
 					ABC3BDC91CF9EBD000281E93 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -566,6 +567,7 @@
 			baseConfigurationReference = 65AF6465488B150C3F2B0A7E /* Pods-skywinapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matteo Vitolo (3C8F3TH87S)";
 				INFOPLIST_FILE = skywinapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funambol.skywinapp;
@@ -578,6 +580,7 @@
 			baseConfigurationReference = 061BB2F0DDD58448F261DF90 /* Pods-skywinapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = skywinapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funambol.skywinapp;
