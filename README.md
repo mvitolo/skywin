@@ -13,6 +13,10 @@ Mattia Natali @matitalatina https://github.com/matitalatina
 
 Piervincenzo Madeo  @piervix https://github.com/piervix
 
+Alessandro Salvati
+
+Enrico Giancaterina
+
 
 ![](readme/PARTITE.png)
 ![](readme/GIOCA.png)
